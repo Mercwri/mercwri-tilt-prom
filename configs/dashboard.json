@@ -83,11 +83,23 @@
           },
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "tilt_temperature_reading",
+          "expr": "tilt_temperature_reading_c",
           "instant": true,
-          "legendFormat": "{{colour}}",
+          "legendFormat": "{{colour}} c",
           "range": false,
           "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "8WQEWWm4k"
+          },
+          "editorMode": "builder",
+          "expr": "tilt_temperature_reading_f",
+          "hide": false,
+          "legendFormat": "{{colour}} f",
+          "range": true,
+          "refId": "B"
         }
       ],
       "title": "CURRENT TEMPERATURE",
@@ -240,10 +252,22 @@
             "uid": "8WQEWWm4k"
           },
           "editorMode": "builder",
-          "expr": "tilt_temperature_reading",
-          "legendFormat": "{{colour}}",
+          "expr": "tilt_temperature_reading_c",
+          "legendFormat": "{{colour}} c",
           "range": true,
           "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "8WQEWWm4k"
+          },
+          "editorMode": "builder",
+          "expr": "tilt_temperature_reading_f",
+          "hide": false,
+          "legendFormat": "{{colour}} f",
+          "range": true,
+          "refId": "B"
         }
       ],
       "title": "TEMPERATURE",

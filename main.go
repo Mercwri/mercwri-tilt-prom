@@ -18,7 +18,8 @@ func recordMetics() {
 			for _, t := range s.Tilts() {
 				beerReading.WithLabelValues(string(t.Colour())).Inc()
 				beerGravity.WithLabelValues(string(t.Colour())).Set(t.Gravity())
-				beerTemperature.WithLabelValues(string(t.Colour())).Set(float64(t.Fahrenheit()))
+				beerTemperatureF.WithLabelValues(string(t.Colour())).Set(float64(t.Fahrenheit()))
+				beerTemperatureC.WithLabelValues(string(t.Colour())).Set(float64(t.Celsius()))
 			}
 			time.Sleep(40 * time.Second)
 		}
@@ -44,8 +45,17 @@ var (
 )
 
 var (
-	beerTemperature = promauto.NewGaugeVec(prometheus.GaugeOpts{
-		Name: "tilt_temperature_reading",
+	beerTemperatureF = promauto.NewGaugeVec(prometheus.GaugeOpts{
+		Name: "tilt_temperature_reading_f",
+		Help: "latest temperature reading",
+	},
+		[]string{"colour"},
+	)
+)
+
+var (
+	beerTemperatureC = promauto.NewGaugeVec(prometheus.GaugeOpts{
+		Name: "tilt_temperature_reading_c",
 		Help: "latest temperature reading",
 	},
 		[]string{"colour"},

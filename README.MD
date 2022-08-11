@@ -9,3 +9,5 @@ Metrics Exposed:
 * tilt_readings
 
 Each Tilt has it's Colour label applied to it.
+
+This is a super basic prometheus exporter for the Tilt2 Hydrometer.
