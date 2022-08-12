@@ -1,3 +1,5 @@
+name: Releases
+
 on:
   release:
     types: [created]
@@ -14,7 +16,7 @@ jobs:
         goos: linux
         goarch: amd64
   release-macos-arm:
-    name: release linux/amd64
+    name: release macos/arm64
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
