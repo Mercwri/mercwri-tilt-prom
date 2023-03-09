@@ -35,6 +35,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/JuulLabs-OSS/ble v0.0.0-20200517053828-ca7534402217 h1:THtxHOyxAZdHhhHkRFGXxev58uYyKDkACzP3XDdc0mM=
 github.com/JuulLabs-OSS/ble v0.0.0-20200517053828-ca7534402217/go.mod h1:6deIuswYSv6W1l3sM/nonw0OKWtIZCn7ZOWvIREoq2A=
+github.com/JuulLabs-OSS/ble v0.0.0-20200716215611-d4fcc9d598bb h1:kIZ7fr8RxucJXNHifPxm71yiWuzpw0SmjlafMzoOd0U=
+github.com/JuulLabs-OSS/ble v0.0.0-20200716215611-d4fcc9d598bb/go.mod h1:6deIuswYSv6W1l3sM/nonw0OKWtIZCn7ZOWvIREoq2A=
 github.com/JuulLabs-OSS/cbgo v0.0.1 h1:A5JdglvFot1J9qYR0POZ4qInttpsVPN9lqatjaPp2ro=
 github.com/JuulLabs-OSS/cbgo v0.0.1/go.mod h1:L4YtGP+gnyD84w7+jN66ncspFRfOYB5aj9QSXaFHmBA=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
